@@ -1,0 +1,23 @@
+@import "../variables";
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+    &__nav{
+        display: flex;
+        justify-content: space-between;
+        width: 258px;
+        &__logo{
+            max-width: 174px;
+            &_hidden{
+                display: none;
+            }
+        }
+    }
+    &_color_white{
+        color: $white;
+    }
+    &_color_black{
+        color: $black;
+    }
+}

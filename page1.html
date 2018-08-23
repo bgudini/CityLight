@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css"/>
+    <title>Document</title>
+</head>
+<body class="page">
+    <div class="headerWrapper headerWrapper_bg_p1">
+        <div class="container">
+            <div class="header header_color_white">
+            <div class="header__nav">
+                    <a href="#" class="menuBtn">
+                        <span class="menuBtn__line menuBtn__line_bgc_white"></span>
+                    </a>
+                    <div class="header__nav__logo">
+                        <img src="img/logo.svg" alt="logo" class="logo">
+                        <p>Проектирование, поставка и монтаж светотехники.</p>
+                    </div>
+                </div>
+                <div class="header__nav__logo header__nav__logo_hidden">
+                    <img src="img/logo.svg" alt="logo" class="logo">
+                    <p>Проектирование, поставка и монтаж светотехники.</p>
+                </div>
+                <div class="header__geo">
+                    <img src="img/headerGeoP1.svg" alt="geo">
+                    <p>г. Санкт-Петербург, ул. Коли Томчака, <br> дом 24 (м. Московские Ворота)</p>
+                </div>
+                <div class="feedback header__feedback">
+                    <button class="btn btn_bgc_yellow btn_color_black header__feedback__btn" data-fancybox data-src="#popup" data-modal="true">перезвоните мне</button>
+                    <div class="feedback__contacts">
+                        <div class="phones">
+                            <a href="tel:+7(812)642-01-79"><img class="phones__img header__phones__img" src="img/headerSoc1P1.svg" alt=""></a>
+                            <div class="phones_dib header__phones_dib">
+                                <p>+7 (812) 642-01-79</p>
+                                <p>+7 (981) 713-16-78</p>
+                            </div>
+                        </div>
+                        <div class="feedback__socials header__feedback__socials">
+                            <img src="img/headerSoc2P1.svg" alt="">
+                            <img src="img/headerSoc3P1.svg" alt="">
+                            <img src="img/headerSoc4P1.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="headerContent headerContent_color_white">
+                <div class="headerContent__topBlock">
+                    <div class="headerContent__headerContainer">
+                        <h1 class="headerContent__header headerContent__header_color_yellow">
+                            Комплексная замена освещения на светодиодное 
+                        </h1>
+                        <h4 class="headerContent__text">Для промышленных и производственных помещений, <br> складов и открытых площадок</h4>
+                    </div>
+                    <img class="headerContent__img" src="img/headerContent__imgP1.png" alt="headerContentImg1">
+                </div>
+                <img class="headerContent__img_hidden" src="img/headerContent__imgP1_hidden.png" alt="">
+                <div class="form headerContent__form">
+                    <h3 class="form__h3">Сколько это будет стоить?</h3>
+                    <form class="form__calculator headerContent__form__calculator" method="post" id="formx">
+                        <input class="input" type="text" placeholder="Тип объекта">
+                        <input class="input" type="text" placeholder="Высота потолка">
+                        <input class="input" type="text" placeholder="Площадь">
+                        <input class="input" type="text" placeholder="Тип потолка">
+                        <p class="form__text">Введите данные, чтобы получить предварительную смету</p>
+                        <button class="btn btn_bgc_yellow btn_color_black btn_tt_uppercase form__btn form__btn_size_little">Рассчитать</button>
+                    </form>
+                    <p class="form__text headerContent__form__text_hidden">Введите данные, чтобы получить предварительную смету</p>
+                    <button class="btn btn_bgc_yellow btn_color_black btn_tt_uppercase form__btn form__btn_size_little headerContent__form__btn_hidden">Рассчитать</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="expenseReduce">
+        <div class="container">
+            <h2 class="expenseReduce__h2">На сколько процентов уменьшится ваш счет за электричество: </h2>
+            <div class="expenseReduce__circleStat">
+                <img class="expenseReduce__img" src="img/circleStat1.svg" alt="">
+                <img class="expenseReduce__img" src="img/circleStat2.svg" alt="">
+            </div>
+            <a class="expenseReduce__a" href="#">Подробное сравнение ламп ДРЛ, ДНаТ и ламп на светодиодах</a>
+        </div>
+    </div>
+    <div class="realisedCalcSlider">
+        <div class="container">
+            <h3 class="realisedCalcSlider__h3">Посмотрите расчеты для реализованных проектов: </h3>
+            <div class="realisedCalcSlider__slider">
+                <div class="realisedCalcSlider__slider__item">
+                    <div class="realisedCalcSlider__slider__itemWrapper">
+                        <img class="realisedCalcSlider__img" src="img/realisedCalcSliderImg.svg" alt="">
+                    <div class="realisedCalcSlider__slider__item__text">
+                        <h4 class="realisedCalcSlider__slider__item__text__h4" >Производственное помещение, 1260 м.кв. </h4>
+                        <p class="realisedCalcSlider__slider__item__text__p">Замена светильников с лампами ДРЛ на светодиодные.<br><strong>Расчет окупаемости проекта:</strong> 1,03 лет<br><strong>Высвобожденная мощность:</strong> 9 кВт в месяц<br><strong>Ежегодная экономия после окупаемости:</strong>  более 400 000 руб</p>
+                        <button class="btn btn_bgc_yellow btn_color_black">Посмотреть расчеты</button>
+                    </div>
+                    </div>
+                </div>
+                <div class="realisedCalcSlider__slider__item">
+                    <div class="realisedCalcSlider__slider__itemWrapper">
+                        <img class="realisedCalcSlider__img" src="img/realisedCalcSliderImg.svg" alt="">
+                    <div class="realisedCalcSlider__slider__item__text">
+                        <h4 class="realisedCalcSlider__slider__item__text__h4" >Производственное помещение, 1260 м.кв. </h4>
+                        <p class="realisedCalcSlider__slider__item__text__p">Замена светильников с лампами ДРЛ на светодиодные.<br><strong>Расчет окупаемости проекта:</strong> 1,03 лет<br><strong>Высвобожденная мощность:</strong> 9 кВт в месяц<br><strong>Ежегодная экономия после окупаемости:</strong>  более 400 000 руб</p>
+                        <button class="btn btn_bgc_yellow btn_color_black">Посмотреть расчеты</button>
+                    </div>
+                    </div>
+                </div>
+                <div class="realisedCalcSlider__slider__item">
+                    <div class="realisedCalcSlider__slider__itemWrapper">
+                        <img class="realisedCalcSlider__img" src="img/realisedCalcSliderImg.svg" alt="">
+                    <div class="realisedCalcSlider__slider__item__text">
+                        <h4 class="realisedCalcSlider__slider__item__text__h4" >Производственное помещение, 1260 м.кв. </h4>
+                        <p class="realisedCalcSlider__slider__item__text__p">Замена светильников с лампами ДРЛ на светодиодные.<br><strong>Расчет окупаемости проекта:</strong> 1,03 лет<br><strong>Высвобожденная мощность:</strong> 9 кВт в месяц<br><strong>Ежегодная экономия после окупаемости:</strong>  более 400 000 руб</p>
+                        <button class="btn btn_bgc_yellow btn_color_black">Посмотреть расчеты</button>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <h4 class="realisedCalcSlider__btnHeader">Получите подробный расчет для своего объекта</h4>
+            <button class="btn btn_color_yellow btn_bgc_transparent btn_border_yellow btn_tt_uppercase" data-fancybox data-src="#popup" data-modal="true">Заказать расчет окупаемости</button>
+        </div>
+    </div>
+    <div class="penalty">
+        <div class="container">
+            <div class="penalty__flexWrapper">
+                <h3 class="penalty__h3">Работу предприятия могут остановить на 90 суток</h3>
+                <h4 class="penalty__h4">при несоблюдении норм искусственного освещения СанПиНа</h4>
+                <div class="penalty__content">
+                    <img class="penalty__img" src="img/penaltyImg.svg" alt="">
+                    <div class="penalty__listContainer">
+                        <h4 class="penalty__h4 penalty_semibold penalty__h4_alignLeft">Штрафов можно избежать, если сделать всё заранее!</h4>
+                        <p class="penalty_semibold">Вызовите специалиста, который</p>
+                        <ul class="penalty__ul">
+                            <li class="penalty__list"><p class="penalty__p">проверит объект на соответствие нормам</p></li>
+                            <li class="penalty__list"><p class="penalty__p">подскажет, как устранить нарушения</p></li>
+                            <li class="penalty__list"><p class="penalty__p">подготовит бесплатный проект для освещения объекта</p></li>
+                            <li class="penalty__list"><p class="penalty__p">подготовит расчет по бюджету и срокам реализации</p></li>
+                        </ul>
+                        <button class="btn btn_bgc_yellow btn_color_black btn_tt_uppercase btn_dib btn_fw_semibold" data-fancybox data-src="#popup" data-modal="true">Вызвать специалиста</button>
+                        <p class="penalty_dib penalty_fsi_18px penalty_semibold">  -  бесплатно</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="economy">
+        <div class="container">
+            <h2 class="economy__h2">Светодиодное освещение - это эффективно, экономично и долговечно!</h2>
+            <h4 class="economy__h4">Грамотное освещение увеличивает производительность и экономит бюджет</h4>
+            <div class="economy__reasons">
+                <div class="economy__reasons__item">
+                    <img class="economy__img" src="img/economyImg1.svg" alt="">
+                    <h5 class="economy__h5">Повысится производительность труда</h5>
+                    <p class="economy__p">Освещенное рабочее место влияет на работоспособность. Если свет тусклый или мерцающий, человек быстрее устает и хуже работает. К тому же, из-за тусклого света люди испытывают негативные эмоции и чаще болеют.</p>
+                </div>
+                <div class="economy__reasons__item">
+                    <img class="economy__img" src="img/economyImg2.svg" alt="">
+                    <h5 class="economy__h5">Существенно снизится нагрузка на электросеть</h5>
+                    <p class="economy__p">Обычная лампа накаливания расходует 60 Ватт при светопотоке 600 Люмен. А светодиодная лампа при таком же светопоке потребляет 10 Ватт. Высвобождается до 90% мощности!</p>
+                </div>
+                <div class="economy__reasons__item">
+                    <img class="economy__img" src="img/economyImg3.svg" alt="">
+                    <h5 class="economy__h5">Обслуживание станет дешевле</h5>
+                    <p class="economy__p">Переведите штатного электрика на пол-ставки! Потому что светодиодные лампы работают дольше и экономнее. Обслуживать их будет просто и бюджетно.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="service">
+        <div class="container">
+            <h2 class="service__header">Наши услуги</h2>
+            <div class="scroller">
+                <div class="scroller__list">
+                    <div class="scroller__item scrollerItem">
+                        <div class="scrollerItem__bigNumber bigNumber bigNumber_color_yellow">1 шаг</div>
+                        <div class="scrollerItem__block">
+                            <h5 class="scrollerItem__header">Заявка (заполняет клиент)</h5>
+                            <div class="scrollerItem__line"></div>
+                            <div class="scrollerItem__text">
+                                Для примерного расчета стоимости нам потребуется предварительная информация о размерах помещений, наличие окон, расстановке оборудования, цвете стен и тд. 
+                            </div>
+                            <div class="scrollerItem__icon"><img src="img/scrollerImg1.svg" alt="list"></div>
+                        </div>
+                    </div>
+                    <div class="scroller__item scrollerItem">
+                        <div class="scrollerItem__bigNumber bigNumber bigNumber_color_yellow">2 шаг</div>
+                        <div class="scrollerItem__block">
+                            <h5 class="scrollerItem__header">Замер на месте</h5>
+                            <div class="scrollerItem__line"></div>
+                            <div class="scrollerItem__text">
+                                Через несколько часов наши специалисты приедут  к вам на объект и сделают необходимые замеры для составления проекта и сметы.
+                            </div>
+                            <div class="scrollerItem__icon"><img src="img/scrollerImg2.svg" alt="clock"></div>
+                        </div>
+                    </div>
+                    <div class="scroller__item scrollerItem">
+                            <div class="scrollerItem__bigNumber bigNumber bigNumber_color_yellow">3 шаг</div>
+                            <div class="scrollerItem__block">
+                                <h5 class="scrollerItem__header">Подбор оборудования и расчет</h5>
+                                <div class="scrollerItem__line"></div>
+                                <div class="scrollerItem__text">
+                                    Обычно мы делаем 2-3 варианта сметы под разный бюджет. Учтем все ваши пожелания!
+                                </div>
+                                <div class="scrollerItem__icon"><img src="img/scrollerImg3.svg" alt="calc"></div>
+                            </div>
+                        </div>
+                    <div class="scroller__item scrollerItem">
+                            <div class="scrollerItem__bigNumber bigNumber bigNumber_color_yellow">4 шаг</div>
+                            <div class="scrollerItem__block">
+                                <h5 class="scrollerItem__header">Подбор оборудования и расчет</h5>
+                                <div class="scrollerItem__line"></div>
+                                <div class="scrollerItem__text">
+                                    Обычно мы делаем 2-3 варианта сметы под разный бюджет. Учтем все ваши пожелания!
+                                </div>
+                                <div class="scrollerItem__icon"><img src="img/scrollerImg3.svg" alt="calc"></div>
+                            </div>
+                        </div>
+                    <div class="scroller__item scrollerItem">
+                            <div class="scrollerItem__bigNumber bigNumber bigNumber_color_yellow">5 шаг</div>
+                            <div class="scrollerItem__block">
+                                <h5 class="scrollerItem__header">Подбор оборудования и расчет</h5>
+                                <div class="scrollerItem__line"></div>
+                                <div class="scrollerItem__text">
+                                    Обычно мы делаем 2-3 варианта сметы под разный бюджет. Учтем все ваши пожелания!
+                                </div>
+                                <div class="scrollerItem__icon"><img src="img/scrollerImg3.svg" alt="calc"></div>
+                            </div>
+                        </div>
+                    <div class="scroller__item scrollerItem">
+                            <div class="scrollerItem__bigNumber bigNumber bigNumber_color_yellow">6 шаг</div>
+                            <div class="scrollerItem__block">
+                                <h5 class="scrollerItem__header">Подбор оборудования и расчет</h5>
+                                <div class="scrollerItem__line"></div>
+                                <div class="scrollerItem__text">
+                                    Обычно мы делаем 2-3 варианта сметы под разный бюджет. Учтем все ваши пожелания!
+                                </div>
+                                <div class="scrollerItem__icon"><img src="img/scrollerImg3.svg" alt="calc"></div>
+                            </div>
+                        </div>
+                    <div class="scroller__item scrollerItem">
+                            <div class="scrollerItem__bigNumber bigNumber bigNumber_color_yellow">7 шаг</div>
+                            <div class="scrollerItem__block">
+                                <h5 class="scrollerItem__header">Подбор оборудования и расчет</h5>
+                                <div class="scrollerItem__line"></div>
+                                <div class="scrollerItem__text">
+                                    Обычно мы делаем 2-3 варианта сметы под разный бюджет. Учтем все ваши пожелания!
+                                </div>
+                                <div class="scrollerItem__icon"><img src="img/scrollerImg3.svg" alt="calc"></div>
+                            </div>
+                        </div>
+                    <div class="scroller__item scrollerItem">
+                            <div class="scrollerItem__bigNumber bigNumber bigNumber_color_yellow">8 шаг</div>
+                            <div class="scrollerItem__block">
+                                <h5 class="scrollerItem__header">Подбор оборудования и расчет</h5>
+                                <div class="scrollerItem__line"></div>
+                                <div class="scrollerItem__text">
+                                    Обычно мы делаем 2-3 варианта сметы под разный бюджет. Учтем все ваши пожелания!
+                                </div>
+                                <div class="scrollerItem__icon"><img src="img/scrollerImg3.svg" alt="calc"></div>
+                            </div>
+                        </div>
+                    <div class="scroller__item scrollerItem">
+                            <div class="scrollerItem__bigNumber bigNumber bigNumber_color_yellow">9 шаг</div>
+                            <div class="scrollerItem__block">
+                                <h5 class="scrollerItem__header">Подбор оборудования и расчет</h5>
+                                <div class="scrollerItem__line"></div>
+                                <div class="scrollerItem__text">
+                                    Обычно мы делаем 2-3 варианта сметы под разный бюджет. Учтем все ваши пожелания!
+                                </div>
+                                <div class="scrollerItem__icon"><img src="img/scrollerImg3.svg" alt="calc"></div>
+                            </div>
+                        </div>
+                    <div class="scroller__item scrollerItem">
+                        <div class="scrollerItem__bigNumber bigNumber bigNumber_color_yellow">10 шаг</div>
+                        <div class="scrollerItem__block">
+                            <h5 class="scrollerItem__header">Подбор оборудования и расчет</h5>
+                            <div class="scrollerItem__line"></div>
+                            <div class="scrollerItem__text">
+                                Обычно мы делаем 2-3 варианта сметы под разный бюджет. Учтем все ваши пожелания!
+                            </div>
+                            <div class="scrollerItem__icon"><img src="img/scrollerImg3.svg" alt="calc"3></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="btn scroller__btn btn_bgc_yellow btn_color_black" data-fancybox data-src="#popup" data-modal="true">ОТПРАВИТЬ ЗАЯВКУ</button>
+        </div>
+    </div>
+    <div class="electrican">
+        <div class="container">
+            <h3 class="electrican__h3">Услуги электриков</h3>
+            <div class="electrican__list">
+                <div class="electrican__itemWrapper">
+                    <div class="electrican__item electrican__item electrican__item electrican__item_1_bg_p1 electrican__item_boxShadow_black">
+                        <div class="electrican__item__text">
+                            <h5 class="electrican__item__text__h5_semibold">Регулярное сервисное обслуживание</h5>
+                            <p class="electrican__item__text__p">Вам не придется следить за нагрузками сети, заниматься заменой ламп, аккумуляторов и тд. Поручите обслуживание нам, и забудьте о поисках электрика для смены розетки.</p>
+                        </div>
+                        <button class="btn electrican__item__btn btn_bgc_yellow btn_color_black btn_big" data-fancybox data-src="#popup" data-modal="true">Мне нужно сервисное обслуживание</button>
+                    </div>  
+                </div>
+                <div class="electrican__itemWrapper">
+                    <div class="electrican__item electrican__item electrican__item electrican__item_2_bg_p1 electrican__item_boxShadow_black">
+                        <div class="electrican__item__text">
+                            <h5 class="electrican__item__text__h5_semibold">Электромонтажные работы</h5>
+                            <p class="electrican__item__text__p">Проведем любые электромонтажные работы: от замены всей проводки до смены нескольких ламп.</p>
+                            <h5 class="electrican__item__text__h5">1,5 года</h5>
+                            <p class="electrican__item__text__p">гарантия на электромонтажные работы</p> 
+                        </div>
+                        <button class="btn electrican__item__btn btn_bgc_yellow btn_color_black btn_big" data-fancybox data-src="#popup" data-modal="true">Мне нужны электромонтажные работы</button> 
+                    </div>
+                </div>
+                <div class="electrican__itemWrapper">
+                    <div class="electrican__item electrican__item electrican__item electrican__item_3_bg_p1 electrican__item_boxShadow_black">
+                        <div class="electrican__item__text">
+                            <h5 class="electrican__item__text__h5_semibold">Установка аварийного светодиодного освещения</h5>
+                            <p class="electrican__item__text__p">Проведем любые электромонтажные работы: от замены всей проводки до смены нескольких ламп.</p>
+                        </div>
+                        <button class="btn electrican__item__btn btn_bgc_yellow btn_color_black btn_big" data-fancybox data-src="#popup" data-modal="true">Мне нужно установить аварийное освещение.</button>
+                    </div>  
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sertification">
+        <div class="container">
+            <h2 class="sertification__header">Все светильники прошли Европейскую и Российскую сертификации</h2>
+            <h4 class="sertification__guarantees">Гарантия от производителя от 3 до 5 лет</h4>
+            <div class="sertificationSlider sertification__slider">
+                <div class="sertificationSlider__list">
+                    <div class="sertificationSlider__item"><img src="img/sertificationImg1.png" alt="sertificationImg" class="sertificationSlider__img"></div>
+                    <div class="sertificationSlider__item"><img src="img/sertificationImg2.png" alt="sertificationImg" class="sertificationSlider__img"></div>
+                    <div class="sertificationSlider__item"><img src="img/sertificationImg3.png" alt="sertificationImg" class="sertificationSlider__img"></div>
+                    <div class="sertificationSlider__item"><img src="img/sertificationImg4.png" alt="sertificationImg" class="sertificationSlider__img"></div>
+                    <div class="sertificationSlider__item"><img src="img/sertificationImg5.png" alt="sertificationImg" class="sertificationSlider__img"></div>
+                    <div class="sertificationSlider__item"><img src="img/sertificationImg6.png" alt="sertificationImg" class="sertificationSlider__img"></div>
+                    <div class="sertificationSlider__item"><img src="img/sertificationImg7.png" alt="sertificationImg" class="sertificationSlider__img"></div>
+                    <div class="sertificationSlider__item"><img src="img/sertificationImg1.png" alt="sertificationImg" class="sertificationSlider__img"></div>
+                    <div class="sertificationSlider__item"><img src="img/sertificationImg2.png" alt="sertificationImg" class="sertificationSlider__img"></div>
+                    <div class="sertificationSlider__item"><img src="img/sertificationImg3.png" alt="sertificationImg" class="sertificationSlider__img"></div>
+                    <div class="sertificationSlider__item"><img src="img/sertificationImg4.png" alt="sertificationImg" class="sertificationSlider__img"></div>
+                    <div class="sertificationSlider__item"><img src="img/sertificationImg5.png" alt="sertificationImg" class="sertificationSlider__img"></div>
+                    <div class="sertificationSlider__item"><img src="img/sertificationImg6.png" alt="sertificationImg" class="sertificationSlider__img"></div>
+                    <div class="sertificationSlider__item"><img src="img/sertificationImg7.png" alt="sertificationImg" class="sertificationSlider__img"></div>
+                    <div class="sertificationSlider__item"><img src="img/sertificationImg1.png" alt="sertificationImg" class="sertificationSlider__img"></div>
+                    <div class="sertificationSlider__item"><img src="img/sertificationImg2.png" alt="sertificationImg" class="sertificationSlider__img"></div>
+                    <div class="sertificationSlider__item"><img src="img/sertificationImg3.png" alt="sertificationImg" class="sertificationSlider__img"></div>
+                    <div class="sertificationSlider__item"><img src="img/sertificationImg4.png" alt="sertificationImg" class="sertificationSlider__img"></div>
+                    <div class="sertificationSlider__item"><img src="img/sertificationImg5.png" alt="sertificationImg" class="sertificationSlider__img"></div>
+                    <div class="sertificationSlider__item"><img src="img/sertificationImg6.png" alt="sertificationImg" class="sertificationSlider__img"></div>
+                    <div class="sertificationSlider__item"><img src="img/sertificationImg7.png" alt="sertificationImg" class="sertificationSlider__img"></div>
+                </div>
+            </div>  
+            <div class="sertification__description">
+                Мы работаем только с лидерами светового оборудования.
+                Все светильники протестированы в собственной лаборатории.                
+            </div>
+        </div>
+    </div>
+    <div class="estimation">
+        <div class="container">
+            <div class="estimation__centerBlock">
+                <h3 class="estimation__h3">Получите 3 ценовых предложения для вашего объекта</h3>
+                <h4 class="estimation__h4">Расчет будет готов в течение 2 часов</h4>
+                <button class="btn estimation__btn btn_bgc_transparent btn_tt_uppercase btn_fw_semibold btn_color_yellow btn_border_yellow" data-fancybox data-src="#popup" data-modal="true">Заказать расчет для объекта</button>
+                <a class="estimation__a" href="#">Смотреть пример расчета</a>
+            </div>
+        </div>
+    </div>
+    <div class="readyCompanies">
+        <div class="container">
+            <h2 class="readyCompanies__h2">Мы перевели на светодиодное освещение уже более 80 компаний</h2>
+            <a class="readyCompanies__a" href="#">Показать все</a>
+            <div class="readyCompanies__slider">
+                <div class="readyCompanies__slider__item">
+                    <h4 class="readyCompanies__h4">Производство автомобильных комплектующих. <br> г. Всеволожск. </h4>
+                    <span class="readyCompanies__line"></span>
+                    <h5 class="readyCompanies__h5">Цех, площадью 1260 м.кв.</h5>
+                    <button class="btn readyCompanies__btn btn_bgc_yellow btn_color_black btn_tt_uppercase">Подробнее</button>
+                </div>
+                <div class="readyCompanies__slider__item">
+                    <h4 class="readyCompanies__h4">Производственно - офисный комплекс в поселке Морозовка, Ленинградской области.</h4>
+                    <span class="readyCompanies__line"></span>
+                    <h5 class="readyCompanies__h5">Общая площадь 6 200 м.кв</h5>
+                    <button class="btn readyCompanies__btn btn_bgc_yellow btn_color_black btn_tt_uppercase">Подробнее</button>
+                </div>
+                <div class="readyCompanies__slider__item">
+                    <h4 class="readyCompanies__h4">Склад продукции <br> промышленной химии в Санкт-Петербурге.</h4>
+                    <span class="readyCompanies__line"></span>
+                    <h5 class="readyCompanies__h5">Складское помещение 2000 м.кв. </h5>
+                    <button class="btn readyCompanies__btn btn_bgc_yellow btn_color_black btn_tt_uppercase">Подробнее</button>
+                </div>
+                <div class="readyCompanies__slider__item">
+                    <h4 class="readyCompanies__h4">Производство автомобильных комплектующих. <br> г. Всеволожск. </h4>
+                    <span class="readyCompanies__line"></span>
+                    <h5 class="readyCompanies__h5">Цех, площадью 1260 м.кв.</h5>
+                    <button class="btn readyCompanies__btn btn_bgc_yellow btn_color_black btn_tt_uppercase">Подробнее</button>
+                </div>
+                <div class="readyCompanies__slider__item">
+                    <h4 class="readyCompanies__h4">Производственно - офисный комплекс в поселке Морозовка, Ленинградской области.</h4>
+                    <span class="readyCompanies__line"></span>
+                    <h5 class="readyCompanies__h5">Общая площадь 6 200 м.кв</h5>
+                    <button class="btn readyCompanies__btn btn_bgc_yellow btn_color_black btn_tt_uppercase">Подробнее</button>
+                </div>
+                <div class="readyCompanies__slider__item">
+                    <h4 class="readyCompanies__h4">Склад продукции <br> промышленной химии в Санкт-Петербурге.</h4>
+                    <span class="readyCompanies__line"></span>
+                    <h5 class="readyCompanies__h5">Складское помещение 2000 м.кв. </h5>
+                    <button class="btn readyCompanies__btn btn_bgc_yellow btn_color_black btn_tt_uppercase">Подробнее</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="reviews">
+            <div class="container">
+                <h2 class="reviews__header">ОТЗЫВЫ КЛИЕНТОВ:</h2>
+                <div class="reviews__slider">
+                    <div class="reviews__slide">
+                        <div class="reviews__person">
+                            <img src="img/Girl1.png" alt="girl" class="reviews__avatar">
+                            <span class="reviews__name">Дарья Малина</span>
+                            <img src="img/vk.svg" alt="vk.com" class="reviews__soc">
+                            <div class="reviews__position">Генеральный директор,<br> ООО “АксГрупп”</div>
+                        </div>
+                        <div class="reviews__text">
+                            <img class="reviews__btnPrev" src="img/blackLeftArrow.svg" alt="">
+                            <img class="reviews__btnNext" src="img/blackRightArrow.svg" alt="">
+                            Очень важно продумать все элементы освещения склада. 
+                            Это поможет не только правильно организовать работу сотрудников при отгрузке или приеме товаров, 
+                            но и избежать ошибок при заполнении документов.
+                        </div>
+                    </div>
+                    <div class="reviews__slide">
+                        <div class="reviews__person">
+                            <img src="img/Girl2.png" alt="girl" class="reviews__avatar">
+                            <span class="reviews__name">Дарья Малина</span>
+                            <img src="img/vk.svg" alt="vk.com" class="reviews__soc">
+                            <div class="reviews__position">Генеральный директор,<br> ООО “АксГрупп”</div>
+                        </div>
+                        <div class="reviews__text">
+                            <img class="reviews__btnPrev" src="img/blackLeftArrow.svg" alt="">
+                            <img class="reviews__btnNext" src="img/blackRightArrow.svg" alt="">
+                            Очень важно продумать все элементы освещения склада. 
+                            Это поможет не только правильно организовать работу сотрудников при отгрузке или приеме товаров, 
+                            но и избежать ошибок при заполнении документов.
+                        </div>
+                    </div>
+                    <div class="reviews__slide">
+                        <div class="reviews__person">
+                            <img src="img/Girl3.png" alt="girl" class="reviews__avatar">
+                            <span class="reviews__name">Дарья Малина</span>
+                            <img src="img/vk.svg" alt="vk.com" class="reviews__soc">
+                            <div class="reviews__position">Генеральный директор,<br> ООО “АксГрупп”</div>
+                        </div>
+                        <div class="reviews__text">
+                            <img class="reviews__btnPrev" src="img/blackLeftArrow.svg" alt="">
+                            <img class="reviews__btnNext" src="img/blackRightArrow.svg" alt="">
+                            Очень важно продумать все элементы освещения склада. 
+                            Это поможет не только правильно организовать работу сотрудников при отгрузке или приеме товаров, 
+                            но и избежать ошибок при заполнении документов.
+                        </div>
+                    </div>
+                    <div class="reviews__slide">
+                        <div class="reviews__person">
+                            <img src="img/Girl4.png" alt="girl" class="reviews__avatar">
+                            <span class="reviews__name">Дарья Малина</span>
+                            <img src="img/vk.svg" alt="vk.com" class="reviews__soc">
+                            <div class="reviews__position">Генеральный директор,<br> ООО “АксГрупп”</div>
+                        </div>
+                        <div class="reviews__text">
+                            <img class="reviews__btnPrev" src="img/blackLeftArrow.svg" alt="">
+                            <img class="reviews__btnNext" src="img/blackRightArrow.svg" alt="">
+                            Очень важно продумать все элементы освещения склада. 
+                            Это поможет не только правильно организовать работу сотрудников при отгрузке или приеме товаров, 
+                            но и избежать ошибок при заполнении документов.
+                        </div>
+                    </div>
+                    <div class="reviews__slide">
+                        <div class="reviews__person">
+                            <img src="img/Girl5.png" alt="girl" class="reviews__avatar">
+                            <span class="reviews__name">Дарья Малина</span>
+                            <img src="img/vk.svg" alt="vk.com" class="reviews__soc">
+                            <div class="reviews__position">Генеральный директор,<br> ООО “АксГрупп”</div>
+                        </div>
+                        <div class="reviews__text">
+                            <img class="reviews__btnPrev" src="img/blackLeftArrow.svg" alt="">
+                            <img class="reviews__btnNext" src="img/blackRightArrow.svg" alt="">
+                            Очень важно продумать все элементы освещения склада. 
+                            Это поможет не только правильно организовать работу сотрудников при отгрузке или приеме товаров, 
+                            но и избежать ошибок при заполнении документов.
+                        </div>
+                    </div>
+                    <div class="reviews__slide">
+                        <div class="reviews__person">
+                            <img src="img/Girl1.png" alt="girl" class="reviews__avatar">
+                            <span class="reviews__name">Дарья Малина</span>
+                            <img src="img/vk.svg" alt="vk.com" class="reviews__soc">
+                            <div class="reviews__position">Генеральный директор,<br> ООО “АксГрупп”</div>
+                        </div>
+                        <div class="reviews__text">
+                            <img class="reviews__btnPrev" src="img/blackLeftArrow.svg" alt="">
+                            <img class="reviews__btnNext" src="img/blackRightArrow.svg" alt="">
+                            Очень важно продумать все элементы освещения склада. 
+                            Это поможет не только правильно организовать работу сотрудников при отгрузке или приеме товаров, 
+                            но и избежать ошибок при заполнении документов.
+                        </div>
+                    </div>
+                    <div class="reviews__slide">
+                        <div class="reviews__person">
+                            <img src="img/Girl2.png" alt="girl" class="reviews__avatar">
+                            <span class="reviews__name">Дарья Малина</span>
+                            <img src="img/vk.svg" alt="vk.com" class="reviews__soc">
+                            <div class="reviews__position">Генеральный директор,<br> ООО “АксГрупп”</div>
+                        </div>
+                        <div class="reviews__text">
+                            <img class="reviews__btnPrev" src="img/blackLeftArrow.svg" alt="">
+                            <img class="reviews__btnNext" src="img/blackRightArrow.svg" alt="">
+                            Очень важно продумать все элементы освещения склада. 
+                            Это поможет не только правильно организовать работу сотрудников при отгрузке или приеме товаров, 
+                            но и избежать ошибок при заполнении документов.
+                        </div>
+                    </div>
+                    <div class="reviews__slide">
+                        <div class="reviews__person">
+                            <img src="img/Girl3.png" alt="girl" class="reviews__avatar">
+                            <span class="reviews__name">Дарья Малина</span>
+                            <img src="img/vk.svg" alt="vk.com" class="reviews__soc">
+                            <div class="reviews__position">Генеральный директор,<br> ООО “АксГрупп”</div>
+                        </div>
+                        <div class="reviews__text">
+                            <img class="reviews__btnPrev" src="img/blackLeftArrow.svg" alt="">
+                            <img class="reviews__btnNext" src="img/blackRightArrow.svg" alt="">
+                            Очень важно продумать все элементы освещения склада. 
+                            Это поможет не только правильно организовать работу сотрудников при отгрузке или приеме товаров, 
+                            но и избежать ошибок при заполнении документов.
+                        </div>
+                    </div>
+                    <div class="reviews__slide">
+                        <div class="reviews__person">
+                            <img src="img/Girl4.png" alt="girl" class="reviews__avatar">
+                            <span class="reviews__name">Дарья Малина</span>
+                            <img src="img/vk.svg" alt="vk.com" class="reviews__soc">
+                            <div class="reviews__position">Генеральный директор,<br> ООО “АксГрупп”</div>
+                        </div>
+                        <div class="reviews__text">
+                            <img class="reviews__btnPrev" src="img/blackLeftArrow.svg" alt="">
+                            <img class="reviews__btnNext" src="img/blackRightArrow.svg" alt="">
+                            Очень важно продумать все элементы освещения склада. 
+                            Это поможет не только правильно организовать работу сотрудников при отгрузке или приеме товаров, 
+                            но и избежать ошибок при заполнении документов.
+                        </div>
+                    </div>
+                    <div class="reviews__slide">
+                        <div class="reviews__person">
+                            <img src="img/Girl5.png" alt="girl" class="reviews__avatar">
+                            <span class="reviews__name">Дарья Малина</span>
+                            <img src="img/vk.svg" alt="vk.com" class="reviews__soc">
+                            <div class="reviews__position">Генеральный директор,<br> ООО “АксГрупп”</div>
+                        </div>
+                        <div class="reviews__text">
+                            <img class="reviews__btnPrev" src="img/blackLeftArrow.svg" alt="">
+                            <img class="reviews__btnNext" src="img/blackRightArrow.svg" alt="">
+                            Очень важно продумать все элементы освещения склада. 
+                            Это поможет не только правильно организовать работу сотрудников при отгрузке или приеме товаров, 
+                            но и избежать ошибок при заполнении документов.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <div class="location">
+        <div class="container container_display_flex">
+            <div class="location__inform">
+                <div class="location__text">
+                    <h2 class="location__h2">Как нас найти</h2>
+                    <h4 class="location__h4">Адрес: Санкт-Петербург, ул. Коли Томчака, дом 24 вход …, 2-й этаж.</h4>
+                    <h5 class="location__h5">Пешком: от метро Московские ворота</h5>
+                    <h5 class="location__h5">На машине:</h5>
+                    <div class="feedback feedback_bottomBlock">
+                        <div class="feedback__contacts">
+                            <div class="phones phones_forMobile">
+                                <img class="" src="img/feedback__mail.svg" alt=""><h4 class="phones__h4">office@city812.com</h4>
+                                <img class="" src="img/phones__phone.svg" alt="">
+                                <div class="phonesAndButton">
+                                    <h4 class="feedback__h4">+7 (812) 642-01-79</h4>
+                                    <h4 class="feedback__h4">+7 (981) 713-16-78</h4>
+                                    <button class="btn feedback__btn btn_bgc_yellow btn_color_black phonesAndButton__btn">заказать звонок</button>
+                                </div> 
+                            </div>
+                            <div class="feedback__socials feedback__socials_float_left">
+                                <div class="feedback__imgContainer"><img class="feedback__socials__img" src="img/locationImg1.svg" alt=""><h4 class="feedback__socials__h4">citylight</h4></div>
+                                <div class="feedback__imgContainer"><img class="feedback__socials__img" src="img/locationImg2.svg" alt=""><h4 class="feedback__socials__h4">citylight</h4></div>
+                                <div class="feedback__imgContainer"><img class="feedback__socials__img" src="img/locationImg3.svg" alt=""><h4 class="feedback__socials__h4">citylight</h4></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <iframe class="location__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2001.6609588044055!2d30.323535002375916!3d59.887977870128324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696306ce7e6e385%3A0xbd5388b649e3ccb7!2z0YPQuy4g0JrQvtC70Lgg0KLQvtC80YfQsNC60LAsIDI0LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTk2MDg0!5e0!3m2!1sru!2sru!4v1533999443406"  width="50%" height="727" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+    </div>
+    <div class="bottomForm">
+        <div class="container">
+            <div class="bottomForm__flexWrapper">
+                <h3 class="bottomForm__h3">Комплексная замена освещения на светодиодное</h3>
+                <h4 class="bottomForm__h4">Для промышленных и производственных помещений, складов и открытых площадок</h4>
+                <div class="form">
+                    <h3 class="form__h3 bottomForm__h3">Сколько это будет стоить?</h3>
+                    <p class="form__text bottomForm__text">Введите данные, чтобы получить предварительную смету</p>
+                    <form class="form__calculator bottomForm__calculator" method="post" id="formx">
+                        <div class="bottomForm__input">
+                            <input class="input" type="text" placeholder="Тип объекта">
+                            <input class="input" type="text" placeholder="Площадь">
+                            <input class="input" type="text" placeholder="Высота потолка">
+                            <input class="input" type="text" placeholder="Тип потолка">
+                        </div>
+                        <button class="btn btn_bgc_yellow btn_color_black btn_tt_uppercase form__btn">Получить расчет</button>
+                    </form>
+                </div>
+            </div>    
+        </div>
+    </div>
+    <div class="footer">
+        <div class="container">
+            <div class="footer__flexWrapper">
+                <div class="footer__left">
+                    <div class="footer__logo">
+                        <img src="img/logoP1Black.svg" alt="">
+                        <p class="footer__p">Светодиодное освещение под ключ</p>
+                    </div>
+                    <div class="footer__rights">
+                        <p class="footer__p">© 2018 city812.ru</p>
+                        <p class="footer__p">Все права защищены</p>
+                    </div>
+                    <a class="footer__politics footer__politics_hidden" href="#">Политика конфиденциальности</a>
+                </div>
+                <a class="footer__politics" href="#">Политика конфиденциальности</a>
+                <p class="footer__p">Разработано в AxLab(BGudini)</p>
+            </div>
+        </div>
+    </div>
+    <div id="popup" class="popup">
+            <form method="POST" id="popup__form">
+                <h4 class="popup__h4">Оставить заявку</h4>
+                <div class="popup__inputs">
+                    <input type="text" class="input input_border_grey popup__input" placeholder="Имя">
+                    <input type="text" class="input input_border_grey popup__input" placeholder="Фамилия">
+                    <input type="text" class="input input_border_grey popup__input" placeholder="Телефон">
+                    <input type="text" class="input input_border_grey popup__input" placeholder="e-mail">
+                </div>
+                <div class="popup__btns">
+                    <button type="button" data-fancybox-close class="btn btn_color_black popup__btn">Закрыть</button>
+                    <button type="submit" class="btn btn_bgc_yellow btn_color_black popup__btn">Отправить</button>   
+                </div>
+            </form>
+        </div>
+    </div>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.7.6/jquery.nicescroll.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>
+</body>
+</html>

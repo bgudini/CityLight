@@ -1,0 +1,362 @@
+@import "reset";
+@import "blocks/blocks";
+@import "variables";
+
+@mixin mobile {
+    @media (max-width: #{$tablet-width - 1px}) {
+      @content;
+    }
+  }
+  
+  @mixin tablet {
+    @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width}) {
+      @content;
+    }
+  }
+  
+  @mixin tabletAndMobile{
+    @media (max-width: #{$desktop-width}) {
+      @content;
+    }
+  }
+
+  @mixin desktop {
+    @media (min-width: #{$desktop-width + 1px}) {
+      @content;
+    }
+  }
+  
+.page{
+    font-family: Segoe UI;
+    font-size: 14px;
+}
+
+*:focus{
+    outline: none;
+}
+   
+.headerWrapper{
+    position: relative;
+    padding-bottom: 90px;
+    &_bg_p1{
+        background-image: url(../img/headerBgP1.png);
+        background-repeat: no-repeat;
+        background-size: cover; 
+    }
+    &_bg_p2{
+        background-image: url(../img/headerBgP2.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+ 
+.container{
+    max-width: 1347px;
+    margin: 0 auto;
+    padding: 0 15px;
+} 
+.smallContainer{
+    max-width: 688px;
+    margin: 0 auto;
+} 
+//adaptive
+
+// readyCompanies
+@include mobile{
+    %h1{
+        font-size: 18px;
+    }
+    
+    %h2{
+        font-size: 18px;
+    }
+    
+    %h3{
+        font-size: 16px;
+    }
+    
+    %h4{
+        font-size: 14px;
+    }
+    
+    %h5{
+        font-size: 12px;
+    }
+    
+    %a{
+        font-size: 12px;
+    }
+    %p{
+        font-size: 12px !important;
+    }
+    .btn{
+        font-size: 12px;
+    }
+}
+
+@include mobile{
+    .slick{
+        &-prev2{
+            left: -6px;
+            width: 12px;
+        }
+    
+        &-next2{
+            right: 0;
+            width: 12px;
+        }
+    }
+    .readyCompanies__slider{
+        padding: 0 12px;
+    }
+}
+
+//header
+@include tablet{
+    .header{
+        &__feedback{
+            max-width: 250px;
+        }
+        &__phones_dib{
+            display: none;
+        }
+        &__feedback__socials{
+            display: none;
+        }
+        &__phones__img{
+            width: 29px;
+        }
+        &Content{
+            &__headerContainer{
+                width: 100%;
+            }
+            &__img{
+              display: none;
+              &_hidden{
+                margin: 30px auto 0 auto;
+                display: block;
+                width: 50%;
+              }
+            }
+            &__form{
+                margin-top: 10px;
+            }
+        }
+    }
+}
+@include mobile{
+    .header{
+        &Wrapper{
+            min-height: 100vh;
+            padding-bottom: 43px;
+        }
+        &__nav{
+            width: auto; 
+            &__logo{
+                display: none;
+                &_hidden{
+                    display: block;
+                }
+            }
+        }
+        &__feedback{
+            max-width: 29px;
+        }
+        &__phones_dib{
+            display: none;
+        }
+        &__feedback__socials{
+            display: none;
+        }
+        &__phones__img{
+            width: 29px;
+            margin: 0;
+        }
+        &__feedback__btn{
+            display: none;
+        }
+        &__geo{
+            display: none;
+        }
+        &Content{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 42px;
+            min-height: calc(100vh - 205px);
+            &__headerContainer{
+                width: 100%;
+            }
+            &__header{
+                font-size: 18px;
+            }
+            &__text{
+                font-size: 14px;
+                margin-top: 10px;
+            }
+            &__img{
+              display: none;
+              &_hidden{
+                margin: 30px auto 0 auto;
+                display: block;
+                width: 60%;
+              }
+            }
+            &__form{
+                margin-top: 10px;
+                &__calculator{
+                    display: none;
+                }
+                &__text_hidden{
+                    display: block;
+                    margin-bottom: 27px;
+                }
+                &__btn_hidden{
+                    display: block;
+                }
+            }
+        }
+    }
+    .form__h3{
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+}
+
+// expenseReduce
+
+@include mobile{
+    .expenseReduce{
+        padding: 40px 0;
+        &__h2{
+            font-size: 18px;
+            line-height: normal;
+        }
+        &__a{
+            font-size: 14px;
+        }
+        &__circleStat{
+            margin-bottom: 17px;
+        }
+    }
+}
+
+// realisedCalcSlider
+@include tablet{
+    .realisedCalcSlider{
+        &__img{
+            display: none !important;
+        }
+    }
+}
+
+@include mobile{
+    .realisedCalcSlider{
+        &__img{
+            display: none !important;
+        }
+    }
+}
+
+//economy
+@include mobile{
+    .economy{
+        &__reasons{
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+            &__item{
+                margin: 0 0 25px 0;
+            }
+        }
+    }
+}
+
+//reviews
+@include tabletAndMobile{
+    .reviews__slide.slick-center{
+        padding: 0 55px;
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+    .reviews__person{
+        align-self: flex-start;
+    }
+    .reviews__avatar{
+        width: 70px;
+    }
+}
+
+//location
+@include tabletAndMobile{
+    .container_display_flex{
+        flex-flow: column nowrap;
+    }
+    .location{
+        &__text{
+            max-width: 100%;
+        }
+        &__map{
+            width: 100%;
+            height: 400px;
+        }
+    }
+    .phones{
+        text-align: center;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: space-between;
+        &_forMobile{
+            height: 220px;
+        }
+        &__h4{
+            margin: 0;
+        }
+        &AndButton{
+            margin: 0;
+        }
+    }
+    .feedback{
+        &__contacts{
+            width: 100%;
+        }
+        &__socials{
+            float: none;
+        }
+    }
+}
+
+//bottomForm
+@include mobile{
+    .bottomForm{
+        &__input{
+            flex-flow: column wrap;
+            height: 77px;
+            width: 320px;
+            margin: 0 auto 43px auto;
+        }
+        &__calculator{
+            min-width: auto;
+        }
+    }
+}
+
+//footer
+@include tabletAndMobile{
+    .footer{
+        &__left{
+            max-width: 260px;
+        }
+    }
+}
+
+@include mobile{
+    .footer{
+        &__politics{
+            display: none;
+            &_hidden{
+                display: inline-block;
+            }
+        }
+    }
+}

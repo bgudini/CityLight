@@ -1,0 +1,6 @@
+.service{
+    padding: 88px 0 145px;
+    &__header{
+        @extend %h2;
+    }
+}

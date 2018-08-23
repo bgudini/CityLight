@@ -1,0 +1,28 @@
+.completedProjects{
+    background-color: $darkWhite;
+    padding-bottom: 100px;
+    &__header{
+        @extend %h2;
+        padding-top: 78px;
+    }
+    &__nav{
+        margin-top: 34px;
+        &__btn{
+            width: 175px;
+            padding: 0;
+            margin-left: 20px;
+        }
+    }
+    &__gallery{
+        margin: 28px auto 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        max-width: 1920px;
+        padding-bottom: 12px;
+        background-color: $white;
+        &__item{
+            margin-top: 34px;
+        }
+    }
+}

@@ -1,0 +1,22 @@
+.popup{
+    max-width: 400px;
+    display: none;
+    &__h4{
+        @extend %h4;
+        text-align: center;
+    }
+    &__inputs{
+        display: flex;
+        flex-flow: row wrap;
+        max-width: 352px;
+        justify-content: space-between;
+        margin: 30px 0 10px 0;
+    }
+    &__input{
+        margin-bottom: 20px;
+    }
+    &__btns{
+        display: flex;
+        justify-content: space-between;
+    }
+}

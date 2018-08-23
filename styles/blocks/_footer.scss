@@ -1,0 +1,25 @@
+.footer{
+    padding: 56px 0;
+    &__flexWrapper{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__logo{
+        display: inline-block;
+        margin-right: 35px;
+    }
+    &__rights{
+        display: inline-block;
+    }
+    &__politics{
+        @extend %a;
+        &_hidden{
+            display: none;
+        }
+    }
+    &__p{
+        @extend %p;
+    }
+}

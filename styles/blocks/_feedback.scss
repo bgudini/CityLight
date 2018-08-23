@@ -1,0 +1,54 @@
+@import "../variables";
+.feedback{
+    width: 400px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    &_bottomBlock{
+        width: 100%;
+        margin-top: 66px;
+    }
+    &__btn{
+        margin: 16px 0 20px 0;
+        margin-left: calc(100% - 173px);
+    }
+    &__h4{
+        @extend %h4;
+    }
+    &__socials{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        margin: 10px auto 0 auto;
+        justify-content: center;
+        &_float_left{
+            float: left;
+        }
+        &__h4{
+            @extend %h4;
+            line-height: 50px;
+            margin:0 34px 0 17px;
+            display: inline-block;
+        }
+    }
+    &__icon{
+        height: 27px;
+        width: auto;
+    }
+}
+.phones{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: baseline;
+    &__h4{
+        @extend %h4;
+        margin: 0 38px 0 13px;
+    }
+    &AndButton{
+        margin-left: 18px;
+        &__btn{
+            margin: 16px 0px 10px;
+            width: 100%;
+        }
+    }
+}

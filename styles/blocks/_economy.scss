@@ -1,0 +1,39 @@
+@import "../variables";
+.economy{
+    padding: 88px 0 124px 0;
+    background-image: url(../img/economyBgi.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    &__h2{
+        @extend %h2;
+        color: $yellow;
+        margin-bottom: 9px;
+    }
+    &__h4{
+        @extend %h4;
+        color: $white;
+        margin-bottom: 79px;
+    }
+    &__h5{
+        @extend %h5;
+        color: $white;
+        display: inline-block;
+        max-width: 234px;
+        margin: 0 0 19px 0;
+    }
+    &__p{
+        color: $grey;
+    }
+    &__reasons{
+        display: flex;
+        flex-flow: row nowrap;
+        &__item{
+            max-width: 363px;
+            margin-right: 80px;
+        }
+    }
+    &__img{
+        display: inline-block;
+        margin-right: 21px;
+    }
+}

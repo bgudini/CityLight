@@ -1,0 +1,9 @@
+@import "../variables";
+.header__geo{
+    width: 280px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+

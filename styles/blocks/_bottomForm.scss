@@ -1,0 +1,41 @@
+.bottomForm{
+    padding: 85px 0 103px 0;
+    background-image: url(../img/headerBgP1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    &__flexWrapper{
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+    &__h3{
+        @extend %h3;
+        text-transform: uppercase;
+        color: $yellow;
+        margin: 0;
+    }
+    &__h4{
+        @extend %h4;
+        color: $white;
+    }
+    &__calculator{
+        display: block;
+        min-width: 681px;
+        height: auto;
+    }
+    &__input{
+        max-width: 625px;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto 41px auto;
+    }
+    &__text{
+        color: $white;
+        max-width: 450px;
+        margin: auto;
+        margin-bottom: 43px;
+    }
+}

@@ -1,0 +1,51 @@
+// ----COLORS--------
+$red: #F00000;
+$white: #FFFFFF;
+$black: #000000;
+$darkGrey: #181821;
+$grey: #989da5;
+$lightGrey: #E5E5E5;
+$yellow: #FFC501;
+$darkWhite: #F7F7F7;
+$green: #008000;
+
+//--------DEVICE SIZE--------
+$tablet-width: 641px;
+$desktop-width: 1024px;
+
+
+%h1{
+    font-weight: 600;
+    font-size: 48px;
+    text-transform: uppercase;
+}
+
+%h2{
+    font-size: 48px; 
+    text-transform: uppercase;
+    line-height: 53px;
+}
+
+%h3{
+    font-size: 36px; 
+    text-transform: uppercase;
+    line-height: 53px;
+}
+
+%h4{
+    font-size: 24px;
+}
+
+%h5{
+    font-size: 18px;
+}
+
+%a{
+    font-size: 18px;
+    text-decoration: underline;
+    text-transform: none;
+    color: $black;
+}
+%p{
+    font-size: 18px;
+}

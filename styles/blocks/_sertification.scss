@@ -1,0 +1,49 @@
+.sertification{
+    padding: 99px 0 125px;
+    &__header{
+        @extend %h2;
+        max-width: 790px;
+        text-align: center;
+        margin: 0 auto;
+    }
+    &__guarantees{
+        @extend %h4;
+        font-weight: 300;
+        text-align: center;
+        margin-top: 17px;
+    }
+    &__slider{
+        margin-top: 62px;
+    } 
+    &__description{
+        text-align: left;
+        max-width: 720px;
+        margin: 88px auto 0;
+        font-weight: 350;
+        font-size: 16px;
+    }
+}
+.sertificationSlider{
+    &__list{
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+        padding: 0 30px;
+    }
+    &__img{
+        max-height: 157px;
+    }
+    &__prevArrow{
+        left: 0;
+        cursor: pointer;
+    }
+    &__nextArrow{
+        right: 0;
+        cursor: pointer;
+    }
+}
+.sertificationSlider__item.slick-slide{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+} 

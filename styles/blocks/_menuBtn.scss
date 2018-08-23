@@ -1,0 +1,39 @@
+@import "../variables";
+.menuBtn{
+    display: inline-block;
+	margin-right: 15px;
+	position: relative;
+	width: 43px;
+	height: 29px;
+	&__line{
+		width: 32px;
+		height: 3px;
+	}
+	
+	&__line, &__line::before, &__line::after
+	{
+		position: absolute;
+		left: 0;
+		top: calc(50% - 1.5px);
+		display: block;
+		border-radius: 3px; 
+		background-color: $white;
+	}
+	&__line_bgc_black{
+		background-color: $black;
+	}
+	&__line::before,
+	&__line::after {
+		background-color: inherit;
+		content: '';
+		width: 43px;
+		height: 3px;
+		transition: 0.3s;
+	}
+	&__line::before{
+		 transform: translateY(13px);
+	}
+	&__line::after{
+		 transform: translateY(-13px);
+	}
+}

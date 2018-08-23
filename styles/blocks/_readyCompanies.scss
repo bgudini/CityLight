@@ -1,0 +1,56 @@
+.readyCompanies{
+    padding: 106px 0 138px 0;
+    background-color: $white;
+    &__h2{
+        @extend %h2;
+        margin-bottom: 11px;
+    }
+    &__a{
+        @extend %a;
+    }
+    &__h4{
+        @extend %h4;
+        color: $white;
+        max-width: 370px;
+        margin: 27px 0 18px 27px;
+        
+    }
+    &__line{
+        display: block;
+        height: 1px;
+        width: 386px;
+        background-color: $white;
+        margin-left: 27px;
+        margin-bottom: 11px;
+    }
+    &__h5{
+        @extend %h5;
+        color: $white;
+        margin-left: 27px;
+        margin-bottom: 31px;
+    }
+    &__btn{
+        margin-left: 27px;
+    }
+    &__slider{
+        margin-top: 63px;
+        padding: 0 30px;
+        position: relative;
+        &__item{
+            margin-right: 15px;
+            height: 550px !important;
+            background-image: url(../img/readyCompanies__item__img.png);
+            background-repeat: no-repeat;
+        }
+    }
+}
+.slick{
+    &-prev2{
+        left: 0;
+    }
+
+    &-next2{
+        right: 0;
+    }
+}
+// Adaptive

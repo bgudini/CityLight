@@ -1,0 +1,44 @@
+@import "../variables";
+.penalty{
+    background-color: $darkWhite;
+    padding: 85px 0 122px 0;
+    &__flexWrapper{
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: center;
+    }
+    &__h3{
+        @extend %h3;
+        text-align: center;
+    }
+    &__h4{
+        @extend %h4;
+        text-align: center;
+        &_alignLeft{
+            text-align: left;
+        }
+        margin-bottom: 42px;
+    }
+    &__img{
+        background: #FFFFFF;
+        box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.15);
+        margin: 21px 0 72px 0;
+    }
+    &_semibold{
+        font-weight: 600;
+    }
+    &__ul{
+        margin: 0 0 33px 30px;
+    }
+    &__list{
+        list-style-image: url(../img/listImg.svg);
+        line-height: 33px;
+    }
+    &__p{
+        @extend %p;
+    }
+    &_dib{
+        display: inline-block;
+    }
+}

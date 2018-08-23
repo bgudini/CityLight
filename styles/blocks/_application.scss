@@ -1,0 +1,59 @@
+.application{
+    padding: 85px 0 107px;
+    &__header{
+        @extend %h3;
+    }
+    &__text{
+        @extend %h4;
+        font-weight: 300;
+        margin-top: 9px;
+    }
+    &_btn{
+        width: 224px;
+        height: 35px;
+        margin-top: 63px;
+        margin: 63px auto 0;
+        display: flex;
+        justify-content: center;
+    }
+} 
+.applicationForm{
+    margin-top: 71px;
+    display: flex;
+    justify-content: space-between;
+    &__firstHalf, &__secondHalf{
+        width: 48%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    &__secondHalf{
+        flex-direction: column;
+    }
+    &__item{
+        width: 100%;
+    }
+    &__inputName{
+        display:block;
+        margin: 12px 0;
+    }
+    &__select{
+        appearance: none;
+        background-image: url('../img/down-arrow.png');
+        background-repeat: no-repeat;
+        background-position: 117px 10px;
+        cursor: pointer;
+    }
+    &__file{
+        position: relative;
+        &:after{
+            content: 'Прикрепить файл';
+            @extend .input;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            border: 1px solid #8a9099;
+            line-height: 30px;
+        }
+    }
+}

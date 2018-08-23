@@ -1,0 +1,64 @@
+@import "../variables";
+.realisedCalcSlider{
+    padding: 67px 0 86px 0;
+    text-align: center;
+    background-image: url(../img/realisedCalcSliderBgP1.png);
+    &__h3{
+        @extend %h3;
+        color: $yellow;
+    }
+    &__btnHeader{
+        @extend %h4;
+        color: $white;
+        margin-bottom: 18px;
+    }
+    &__slider{
+        margin: 66px 0;
+        &__item{
+            text-align: left;
+            align-items: center;
+            &Wrapper{
+                height: 350px !important;
+                border-radius: 20px;
+                margin: 0 auto;
+                background-color: $darkWhite;
+                display: flex;
+                flex-flow: row nowrap;
+                align-items: center;
+                max-width: 1219px;
+            }
+            &__text{
+                margin-left: 36px;
+                &__h4{
+                    @extend %h4;
+                    text-transform: uppercase;
+                    font-weight: 600;
+                    margin: 0 0 29px 0;
+                }
+                &__p{
+                    font-weight: 300;
+                    line-height: 33px;
+                    margin-bottom: 37px;
+                    @extend %p;
+                }
+            }
+        }
+    }
+}
+.slick{
+    &-arrow{
+        position: absolute;
+        z-index: 1;
+        top: calc(50% - 23px);
+        &:hover{
+            cursor: pointer;
+        }
+    }
+    &-prev{
+        left: 0;
+    }
+
+    &-next{
+        right: 0;
+    }
+}

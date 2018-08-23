@@ -1,0 +1,67 @@
+@import "../variables";
+.headerContent{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-top: 182px;
+    font-size: 24px;
+    &_color_white{
+        color: $white;
+    }
+    &__topBlock{
+        position: relative;
+    }
+    &__headerContainer{
+        width: 60%;
+        z-index: 2;
+    }
+    &__header{
+        @extend %h1;
+        font-weight: 500;
+        &_color_yellow{
+            color: $yellow;
+        }
+    }
+    &__text{
+        @extend %h4;
+    }
+    &__img{
+        position: absolute;
+        width: 40%;
+        right: 0;
+        top: 0;
+        z-index: 0;
+        &_hidden{
+            display: none;
+        }
+    }
+    &__list{
+        margin-top: 47px;
+        z-index: 1;
+        &__item{
+            display: flex;
+            align-items: center;
+            margin-top: 25px;
+            &__text{
+                margin-left: 29px;
+                font-size: 24px;
+            }
+            &__icon{
+                display: inline-block;
+                text-align: center;
+                width: 35px;
+            }
+        }
+    }
+    &__form{
+        &__text_hidden{
+            display: none;
+        }
+        &__btn_hidden{
+            display: none;
+        }
+    }
+    &__btn{
+        margin-top: 45px;
+    }
+}

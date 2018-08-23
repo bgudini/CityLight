@@ -1,0 +1,31 @@
+.location{
+    position: relative;
+    &__inform{
+        display: inline-block;
+    }
+    &__text{
+        max-width: 600px;
+        float: right;
+    }
+    &__h2{
+        @extend %h2;
+    }
+    &__h4{
+        @extend %h4;
+        margin-top: 12px;
+    }
+    &__h5{
+        @extend %h5;
+        margin-top: 36px;
+    }
+    &__map{
+        display: inline-block;
+    }
+}
+
+.container_display_flex{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+}

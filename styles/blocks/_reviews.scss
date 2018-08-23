@@ -1,0 +1,88 @@
+.reviews{
+    padding: 75px 0px 87px;
+    background-color: $darkWhite;
+    &__header{
+        @extend %h2;
+       text-align: center;
+    } 
+    &__slider{
+        margin-top: 93px; 
+    }
+    &__slide{
+        padding: 20px 30px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+    &__text, &__name, &__position{
+        display: none;
+    }
+    &__avatar{
+        max-width: 65px;
+        max-height: 65px;
+    }
+    &__soc{
+        margin-left: 12px;
+    }
+    &__name{
+        font-weight: 600;
+        margin-top: 3px; 
+    }
+    &__position{
+        margin-top: 6px;
+        max-width: 160px;
+    }
+    &__btnPrev{
+        height: 21px;
+        position: absolute;
+        left: -20px;
+        top: calc(50% - 10px);
+    }
+    &__btnNext{
+        height: 21px;
+        position: absolute;
+        right: -20px;
+        top: calc(50% - 10px);
+    }
+    &__slide.slick-center &__avatar{
+        max-width: 95px;
+        max-height: 95px;
+    }
+    &__slide.slick-center{
+        max-width: 888px !important;
+        width: 100vw;
+        padding: 0px 70px;
+        display: flex !important;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    &__text{
+        background-color: $white;
+        max-width: 580px;
+        padding: 20px 25px 16px 25px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 30px rgba($black, 0.1);
+        position: relative;
+        &:after{
+            content: '';	
+            width: 0; 
+            height: 0; 
+            position: absolute;
+            top: 0;
+            left: -22px;
+            border-top: 30px solid $white; 
+            border-left: 30px solid transparent;
+            filter: drop-shadow(0px 0px 30px rgba($black, 0.1))
+        }
+    }
+}
+.reviews__person .reviews__soc{
+    display: none;
+}
+.slick-center  .reviews__text,.slick-center .reviews__position{
+    display: block; 
+}
+.slick-center  .reviews__name,.slick-center  .reviews__soc{
+    display: inline-block;
+}
